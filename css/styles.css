@@ -1,0 +1,84 @@
+html {
+  font-size: 22px;
+}
+* {
+  /* border: 1px solid white; */
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: Helvetica;
+  color: seashell;
+  opacity: 0.9;
+}
+header {
+  overflow: hidden;
+}
+header nav {
+  width: 100%;
+  height: 69px;
+}
+header img {
+  max-height: 50px;
+  margin-left: 0.7rem;
+  margin-top: 0.5rem;
+}
+header ul {
+  float: right;
+}
+header nav ul li {
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+header nav ul li a {
+  color: seashell;
+  opacity: 0.7;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  color: #bada55;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 576px) {
+  .menu {
+    display: none;
+  }
+}
+
+/* ************ OUR MISSION SECTION ******************* */
+#mission {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-height: 700px;
+  background-image: url("../images/img-mission-background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#mission article {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#mission article h4 {
+  margin-top: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 576px) {
+  #mission article h4 {
+    font-size: 0.8rem;
+  }
+}
+
+/* *********** FEATURED TEA SECTION ***************** */
