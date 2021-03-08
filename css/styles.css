@@ -2,7 +2,7 @@ html {
   font-size: 22px;
 }
 * {
-  /* border: 1px solid white; */
+  border: 1px solid white;
 }
 
 body {
@@ -11,12 +11,21 @@ body {
   color: seashell;
   opacity: 0.9;
 }
+h1,
+h2,
+h4,
+figcaption {
+  opacity: 0.7;
+}
 header {
   overflow: hidden;
 }
 header nav {
   width: 100%;
   height: 69px;
+  position: fixed;
+  z-index: 10;
+  background-color: rgb(0, 0, 0);
 }
 header img {
   max-height: 50px;
@@ -82,3 +91,36 @@ header nav ul li a:hover {
 }
 
 /* *********** FEATURED TEA SECTION ***************** */
+
+#featured {
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 3rem;
+  text-align: center;
+}
+.image-container {
+  max-width: 1000px;
+  height: auto;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.image-container figure {
+  max-width: 300px;
+  height: auto;
+  margin: 0.5rem;
+  border: 1px solid red;
+}
+.image-container figcaption {
+  margin-top: 0.8rem;
+  font-weight: bold;
+}
+.image-container figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media only screen and (max-width: 644px) {
+}
